@@ -40,9 +40,9 @@
     --background-color-p-op: #0000007d;
 }
 
-html {
+/* html {
     width: 100%;
-}
+} */
 
 /* !Font-Stylings */
 
@@ -228,7 +228,6 @@ h2 {
 /* Display Grid on section 1 */
 
 .content1 {
-    width: 100%;
     background-image: url('../img/cleo-topper.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -280,7 +279,7 @@ h2 {
 /*  Footer */
 
 footer {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 15vh;
     background-color: var(--background-color-footer);
     height: auto;

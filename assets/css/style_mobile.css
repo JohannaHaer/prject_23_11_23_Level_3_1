@@ -1,42 +1,119 @@
 @media only screen and (max-width: 480px) {
 
 html {
-    font-size: 12px;
+    font-size: 8px;
 }
 
-.content1 {
-    width: 100%;
+.bg-img {
+    height: 100vh;
     background-image: url('../img/cleo-topper.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    display: grid;
-    padding-bottom: 15vh;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(4, max-content);
+    overflow: scroll;
+    z-index: -100;
+}
+
+/* !Font-Stylings */
+
+/* Font-Stylings section 1 - section 1 */
+
+h1 {
+    margin-bottom: 5vh;
+}
+
+.pV {
+    left: 16rem;
+}
+
+.pArt2 {
+    font-size: 3rem;
+}
+
+.pArt3_4 {
+    font-size: 2.5rem;
+}
+
+.pArt3_Span3 {
+    font-size: 2.5rem;
+}
+
+.header button {
+    font-size: 1.5rem;
+}
+
+/* !Main - Section 1 Styling */
+
+/* Display Grid on section 1 */
+
+.content1 {
+    background-image: none;
+    padding-bottom: 5vh;
     grid-template-areas: 
-    ". . . . header"
-    ". section1 section1 section1 . . . . . . ."
-    ". . section2 section2 section2 section2 . . . . ."
+    ". . . . . . . header header header header"
+    ". section1 section1 section1 section1 section1 . . . . ."
+    ". . section2 section2 section2 section2 section2 section2 section2 . ."
     ". . . section3 section3 section3 section3 section3 section3 . .";
 }
 
 .section1 {
     grid-area: section1;
-    margin-bottom: 35vh;
+    margin-bottom: 15vh;
 }
 
 .section2 {
     grid-area: section2;
-    margin-bottom: 50vh;
-    padding-right: 1.8rem;
+    margin-bottom: 25vh;
+    padding-right: 0;
 }
 
 .section3 {
     grid-area: section3;
-    display: flex;
-    flex-direction: column;
-    gap: 35vh;
+    gap: 15vh;
+}
+
+.description {
+    padding-right: 0;
+}
+
+.children {
+    background-image: url('../img/see.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: -2vh;
+}
+
+/*  Footer */
+
+footer {
+    padding-top: 5vh;
+    grid-template-areas: 
+    ". fText fText fText fText fText . . . . ."
+    ". button button . . . . . . . ."
+    ". . . . website website website . . . .";
+}
+
+.help {
+    grid-area: fText;
+    padding: 2.5vw;
+}
+
+.button {
+    grid-area: button;
+    background-color: var(--background-color-footer);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-white);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.website {
+    grid-area: website;
+    justify-self: center;
+    margin-top: 5vh;
+    padding-bottom: 2vh;
 }
 }
