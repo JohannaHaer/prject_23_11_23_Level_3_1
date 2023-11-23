@@ -44,10 +44,6 @@ html {
     width: 100%;
 }
 
-body {
-    
-}
-
 /* !Font-Stylings */
 
 /* Font-Stylings section 1 - section 1 */
@@ -151,6 +147,7 @@ h2 {
 .pArt3_4 {
     color: var(--color-blue);
     font-size: 2.2rem;
+    line-height: 1.5;
 }
 
 .pArt3_Span3 {
@@ -171,7 +168,9 @@ h2 {
     font-family: 'Roboto-Light';
     color: var(--color-white);
     font-size: 1.5rem;
-    background-color: var(--background-color-footer);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .pFooterBottom {
@@ -229,13 +228,14 @@ h2 {
 /* Display Grid on section 1 */
 
 .content1 {
-    width: 100vw;
+    width: 100%;
     background-image: url('../img/cleo-topper.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: grid;
+    padding-bottom: 15vh;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4, max-content);
     grid-template-areas: 
@@ -261,7 +261,11 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 35vh;
-    padding-right: 1.5rem;
+    
+}
+
+.description {
+    padding-right: 20vw;
 }
 
 .children {
@@ -269,7 +273,49 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: max-content;
+    margin-bottom: -2vh;
+}
+
+/*  Footer */
+
+footer {
+    width: 100%;
+    padding-top: 15vh;
+    background-color: var(--background-color-footer);
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: 
+    ". fText fText fText . . . . . . ."
+    ". button . . . . . . . . ."
+    ". . . . website website website . . . .";
+}
+
+.help {
+    grid-area: fText;
+    margin-bottom: 5vh;
+    padding-right: 2.2vw;
+}
+
+.button {
+    grid-area: button;
+    background-color: var(--background-color-footer);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-white);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.website {
+    grid-area: website;
+    justify-self: center;
+    margin-top: 15vh;
+    padding-bottom: 2vh;
+}
+
+.button:hover {
+    box-shadow: 10px 10px 1px var(--color-white);
 }
