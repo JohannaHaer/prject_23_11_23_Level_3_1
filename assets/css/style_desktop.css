@@ -42,7 +42,7 @@
 
 /* !Font-Stylings */
 
-/* Font-Stylings section 1 - section 1 */
+/* Font-Stylings content 1 - section 1 */
 
 h1 {
     font-family: 'Inter';
@@ -73,7 +73,7 @@ h1 {
     left: 17rem;
 }
 
-/* Font-Stylings section 1 - section 2 */
+/* Font-Stylings content 1 - section 2 */
 
 .pArt2 {
     font-family: 'SANTIO-Bold';
@@ -87,7 +87,7 @@ h1 {
     background-color: var(--background-color-p);
 }
 
-/* Font-Stylings section 1 - section 3 */
+/* Font-Stylings content 1 - section 3 */
 
 .fontFamArt3 {
     font-family: 'SANTIO-Bold';
@@ -225,7 +225,7 @@ h2 {
     height: max-content;
 }
 
-/* Display Grid on section 1 */
+/* Display Grid on content 1 */
 
 .content1 {
     background-image: url('../img/cleo-topper.jpg');
@@ -266,6 +266,8 @@ h2 {
     padding-right: 17.8rem;
 }
 
+/* Picture part with children */
+
 .children {
     background-image: url('../img/see.png');
     background-position: center;
@@ -276,7 +278,7 @@ h2 {
     margin-bottom: -2vh;
 }
 
-/*  Footer */
+/*  Display Grid on Footer */
 
 footer {
     /* width: 100%; */

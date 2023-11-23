@@ -16,7 +16,7 @@ html {
 
 /* !Font-Stylings */
 
-/* Font-Stylings section 1 - section 1 */
+/* Font-Stylings content 1 - section 1 */
 
 h1 {
     margin-bottom: 5vh;
@@ -29,6 +29,8 @@ h1 {
 .pV {
     left: 20rem;
 }
+
+/* Font-Stylings content 1 - section 2 */
 
 .pArt2 {
     font-size: 3rem;
@@ -60,7 +62,7 @@ h1 {
 }
 
 
-/* Display Grid on section 1 */
+/* Display Grid on content 1 */
 
 .content1 {
     background-image: none;
@@ -82,14 +84,14 @@ h1 {
 }
 
 .section3 {
-    gap: 15vh;
+    gap: 10vh;
 }
 
 .description {
     padding-right: 0;
 }
 
-/*  Footer */
+/*  Display Grid on Footer */
 
 footer {
     padding-top: 5vh;
