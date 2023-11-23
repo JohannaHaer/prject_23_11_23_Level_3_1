@@ -40,10 +40,6 @@
     --background-color-p-op: #0000007d;
 }
 
-/* html {
-    width: 100%;
-} */
-
 /* !Font-Stylings */
 
 /* Font-Stylings section 1 - section 1 */
@@ -61,6 +57,10 @@ h1 {
     font-size: 2rem;
     color: var(--color-yellow);
     position: relative;
+}
+
+.pScroll a {
+    color: var(--color-yellow);
 }
 
 .pV {
