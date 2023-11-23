@@ -1,27 +1,42 @@
 @media only screen and (max-width: 480px) {
-    
 
-    html {
-        font-size: 5px;
-    }
+html {
+    font-size: 12px;
+}
 
+.content1 {
+    width: 100%;
+    background-image: url('../img/cleo-topper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    padding-bottom: 15vh;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas: 
+    ". . . . header"
+    ". section1 section1 section1 . . . . . . ."
+    ". . section2 section2 section2 section2 . . . . ."
+    ". . . section3 section3 section3 section3 section3 section3 . .";
+}
 
-    .content1 {
-        width: 100%;
-        background-image: url('../img/cleo-topper.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        display: grid;
-        padding-bottom: 15vh;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, max-content);
-        grid-template-areas: 
-        ".... header"
-        ". . section1 . ."
-        ". . section2 . ."
-        ". . section3 . .";
-    }
+.section1 {
+    grid-area: section1;
+    margin-bottom: 35vh;
+}
 
+.section2 {
+    grid-area: section2;
+    margin-bottom: 50vh;
+    padding-right: 1.8rem;
+}
+
+.section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+    gap: 35vh;
+}
 }
