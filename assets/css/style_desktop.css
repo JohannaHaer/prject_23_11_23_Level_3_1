@@ -39,6 +39,13 @@
     --background-color-p-op: #00000033;
 }
 
+/* Heart Image Sizing */
+
+.heart {
+    width: 1rem;
+    height: max-content;
+}
+
 /* Schriftstylings */
 
 h1 {
@@ -71,6 +78,8 @@ h1 {
     right: 1.5rem;
 }
 
+/* p Styling in section 1 - article 2 */
+
 .pArt2 {
     font-family: 'SANTIO-Bold';
     font-size: 2.25rem;
@@ -81,6 +90,8 @@ h1 {
     color: var(--color-white);
     background-color: var(--background-color-p);
 }
+
+/* Font Styling in section 1 - article 3 */
 
 .fontFamArt3 {
     font-family: 'SANTIO-Bold';
