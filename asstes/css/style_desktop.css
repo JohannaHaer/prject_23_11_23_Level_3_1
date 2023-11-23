@@ -1,6 +1,185 @@
 /* Global Styling */
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Mr_Dafoe';
+    src: url('../fonts/Mr_Dafoe/MrDafoe-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'SANTIO-Bold';
+    src: url('../fonts/SANTIO/TTF/Santio\ Bold.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #FFF;
+    --color-yellow: #E7BC0E;
+    --color-green: #6BC1A3;
+    --color-pink: #CB91B6;
+    --color-blue: #7EB8E1;
+    --background-color-p: #333;
+    --background-color-footer: #000;
+    --background-color-p-op: #00000033;
+}
+
+/* Schriftstylings */
+
+h1 {
+    font-family: 'Inter';
+    font-size: 4.125rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.pHeader {
+    font-family: 'Roboto-Light';
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.pScroll {
+    font-family: 'Mr_Dafoe';
+    font-size: 2rem;
+    color: var(--color-yellow);
+    position: relative;
+}
+
+.pV {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color-yellow);
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.pArt2 {
+    font-family: 'SANTIO-Bold';
+    font-size: 2.25rem;
+    color: var(--color-green);
+}
+
+.pArt2Span {
+    color: var(--color-white);
+    background-color: var(--background-color-p);
+}
+
+.fontFamArt3 {
+    font-family: 'SANTIO-Bold';
+}
+
+h2 {
+    font-size: 8.5rem;
+    color: var(--color-yellow);
+}
+
+.pArt3_1 {
+    color: var(--color-yellow);
+}
+
+.pArt3_2 {
+    color: var(--color-pink);
+}
+
+.pArt3_3 {
+    color: var(--color-green);
+}
+
+.Art3_4 {
+    color: var(--color-blue);
+}
+
+.pArt3_Font1 {
+    font-size: 3.2rem;
+}
+
+.Art3_Font2 {
+    font-size: 6rem;
+}
+
+.Art3_Font3 {
+    font-size: 7rem;
+}
+
+.Art3_Font3 {
+    font-size: 2.2rem;
+}
+
+.pArt3_Span1 {
+    font-size: 2.6rem;
+    color: var(--color-white);
+    background-color: var(--background-color-p-op);
+}
+
+.pArt3_Span2 {
+    font-size: 2.6rem;
+    color: var(--color-white);
+    background-color: var(--background-color-p);
+}
+
+.pArt3_Span3 {
+    font-size: 2.2rem;
+    color: var(--color-white);
+    background-color: var(--background-color-p);
+}
+
+.pFooter {
+    font-family: 'Inter';
+    color: var(--color-white);
+    font-size: 3rem;
+}
+
+.buttonFooter {
+    font-family: 'Roboto-Light';
+    color: var(--color-white);
+    font-size: 1.5rem;
+    background-color: var(--background-color-footer);
+}
+
+.pFooterBottom {
+    font-family: 'Roboto-Light';
+    font-size: 0.8rem;
+    color: var(--color-white);
+}
+
+.pFooterBottom_Span {
+    color: var(--color-green);
+}
+
+header {
+    align-items: end;
+}
+
+main {
+    width: 100vw;
+    background-image: url('../img/cleo-topper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: 
+    ". article1 article1 article1 . . . . . . ."
+    ". . article2 article2 article2 article2 . . . . ."
+    ". . . article3 article3 article3 article3 article3 article3 . .";
 }
